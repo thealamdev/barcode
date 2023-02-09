@@ -15,6 +15,10 @@ return new class extends Migration
     {
         Schema::create('barcodes', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->integer('age');
+            $table->integer('salary');
+            $table->string('address');
             $table->timestamps();
         });
     }
