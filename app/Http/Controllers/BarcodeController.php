@@ -15,7 +15,7 @@ class BarcodeController extends Controller
     public function barcode()
     {
         $barcode = Barcode::find(1);
-        return $barcode;
+        return view('barcode',compact('barcode'));
     }
 
     /**
