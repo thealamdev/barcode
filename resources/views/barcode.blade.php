@@ -7,7 +7,14 @@
     <title>barcode</title>
 </head>
 <body>
-    <p>barcode</p>
-     {!! DNS1D::getBarcodeHTML($barcode->name, 'CODABAR') !!}
+    <h1>Employee Details</h1>
+
+<p>Name: {{ $barcode->name }}</p>
+<p>Age: {{ $barcode->age }}</p>
+<p>Salary: {{ $barcode->salary }}</p>
+
+<img src="{{ url('/barcode/' . $barcode->id) }}">
+
+     
 </body>
 </html>
